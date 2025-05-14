@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parv Maurya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --secondary-color: #f1f5f9;
+      --card-bg: #ffffff;
+      --text-color: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #334155;
+      margin-top: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .timeline div {
+      flex: 1 1 200px;
+      background: #e0e7ff;
+      padding: 1rem;
+      border-left: 5px solid var(--primary-color);
+      border-radius: 8px;
+      font-weight: 600;
+      color: #1e40af;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .grid-two {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .grid-two > div {
+      flex: 1 1 400px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 640px) {
+      .timeline {
+        flex-direction: column;
+      }
+      .grid-two {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Parv Maurya</h1>
+    <p>Software Engineer at American Express | Chatbot Systems | Backend Developer</p>
+  </header>
+
+  <div class="container">
+    
+    <section class="section">
+      <h2>Career Journey at American Express</h2>
+      <div class="timeline">
+        <div><strong>Intern</strong><br>Jan '21 – Jul '21</div>
+        <div><strong>Engineer-III</strong><br>Aug '21 – Aug '22</div>
+        <div><strong>Engineer-II</strong><br>Aug '22 – Aug '24</div>
+        <div><strong>Engineer-I</strong><br>Aug '24 – Present</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Introduction & Current Responsibilities</h2>
+      <ul>
+        <li>Over 4+ years of industry experience.</li>
+        <li>Currently working as Engineer-I in the Techcare Chatbot team at American Express.</li>
+        <li>Maintaining a system with over 500k+ chats per year, available to all AMEX colleagues.</li>
+        <li>Collaborating across teams on feature lifecycles: requirement gathering, design discussions, and validation.</li>
+        <li>Leading design discussions to ensure stability, scalability, and system resilience.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Accomplishments</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Work</h3>
+          <ul>
+            <li>Implemented Bomgar integration (300k sessions/year).</li>
+            <li>Developed Abandon Automation (100k user chats/year).</li>
+            <li>Handled DB migration & ETL from TIMS Solr to Elasticsearch (1M+ docs).</li>
+            <li>Integrated Nexthink with chatbot systems.</li>
+            <li>Built a data ingestion pipeline for the RAG system.</li>
+            <li>Created Kibana dashboards for chatbot analytics.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Personal</h3>
+          <ul>
+            <li>Participated in Growthack hackathons multiple times.</li>
+            <li>Attended the RoadShow event in 2023.</li>
+            <li>Building a personal chess engine using novel algorithms.</li>
+            <li>Wrote a multithreaded article on evaluating prime numbers.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Parv Maurya | <a href="https://github.com/yourusername">GitHub</a> | <a href="mailto:your@email.com">Email</a></p>
+  </footer>
+
+</body>
+</html>
