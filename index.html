@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Parv Maurya | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -28,7 +28,7 @@
     header {
       background: var(--primary-color);
       color: #fff;
-      padding: 1rem;
+      padding: 1rem 1rem 0.8rem;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -104,6 +104,38 @@
 
     .grid-two > div {
       flex: 1 1 400px;
+    }
+
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      color: #1e40af;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .tooltip:hover {
+      color: #0c4a6e;
+    }
+
+    .tooltip-content {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      z-index: 10;
+      width: 300px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      display: none;
+    }
+
+    .tooltip:hover .tooltip-content {
+      display: block;
     }
 
     footer {
@@ -183,7 +215,17 @@
           <ul>
             <li>Participated in Growthack hackathons multiple times.</li>
             <li>Attended the RoadShow event in 2023.</li>
-            <li>Building a personal chess engine using novel algorithms.</li>
+            <li>
+              <div class="tooltip">
+                Building a personal chess engine using novel algorithms.
+                <div class="tooltip-content">
+                  <strong>My Chess Engine:</strong><br>
+                  Written in Java using bitboards, alpha-beta pruning, transposition tables, and Lazy SMP parallelism.<br>
+                  Benchmarked against Stockfish Level 3 on Lichess.<br>
+                  ~600k NPS at depth 7.
+                </div>
+              </div>
+            </li>
             <li>Wrote a multithreaded article on evaluating prime numbers.</li>
           </ul>
         </div>
